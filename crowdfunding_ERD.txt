@@ -1,0 +1,38 @@
+
+contact
+--
+contact_id int pk
+first_name string 
+last_name string 
+email string
+
+
+
+category
+--
+category_id string pk
+category string
+
+
+subcategory
+--
+subcategory_id string pk
+subcategory string
+
+
+crowdfunding
+--
+cf_id int pk
+contact_id int fk >- contact.contact_id
+company_name string
+blurb string
+goal double
+pledge double
+outcome string
+backers_count int
+country string
+currency int
+launched_at date
+deadline date
+category_id string fk >- category.category_id
+subcategory_id string fk >- subcategory.subcategory_id

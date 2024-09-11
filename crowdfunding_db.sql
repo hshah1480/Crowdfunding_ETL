@@ -41,6 +41,11 @@ CREATE TABLE campaign (
 	FOREIGN KEY (subcategory_id) REFERENCES subcategory(subcategory_id)
 );
 
+-- View each new table with imported data.
+SELECT * FROM contacts;
+SELECT * FROM category;
+SELECT * FROM subcategory;
+SELECT * FROM campaign;
 
 
 
